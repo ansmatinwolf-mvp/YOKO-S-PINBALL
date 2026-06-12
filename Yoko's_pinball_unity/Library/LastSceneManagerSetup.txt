@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Yoko's Pinball Beta.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
