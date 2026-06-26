@@ -2,23 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game: MonoBehaviour
+public class Game : MonoBehaviour
 {
-    private Vector2 startPosition = new Vector3(27.3299999f, -5.30000019f, 0.189999998f);
-    public static Game Instance;
-    [SerializeField] GameObject pfBall;
+    public static Game instance;
+    [SerializeField] GameObject KisakiBall;
 
-    public GameObject Pfball { get => pfBall; set => pfBall = value; }
-
-    void Start()
+    void Awake()
     {
-        Instance = this;
+        instance = this; 
     }
 
-    private void Start();
-    {
-        SpawnBall();
-    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +21,6 @@ public class Game: MonoBehaviour
 
     public void SpawnBall()
     {
-        Instantiate(pfBall, startPosition, Quaternion.identity);
+        // Instiate(Ball);
     }
 }

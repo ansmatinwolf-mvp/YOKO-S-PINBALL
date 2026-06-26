@@ -32,7 +32,7 @@ public class Camera : MonoBehaviour
         }
         else
         {
-            GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
+            GameObject[] balls = GameObject.FindGameObjectsWithTag("ball");
             {
                 ball = balls[0];
             }

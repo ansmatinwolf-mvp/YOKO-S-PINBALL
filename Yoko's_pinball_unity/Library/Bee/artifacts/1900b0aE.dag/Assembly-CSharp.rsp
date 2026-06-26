@@ -352,7 +352,6 @@
 "Assets/Scripts/Flipper.cs"
 "Assets/Scripts/Game.cs"
 "Assets/Scripts/Spring.cs"
-"Assets/Scripts/Triple.cs"
 -langversion:9.0
 /deterministic
 /optimize+

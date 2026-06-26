@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,12 @@ public class Ball : MonoBehaviour
 {
     Vector2 previousPosition;
     private new Rigidbody rigidbody;
+    private Vector3 startPosition = new Vector3(2.9000001f, -11.0600004f, -3.70000005f);
+
+    private static Vector3 Vector3(double v1, double v2, double v3)
+    {
+        throw new NotImplementedException();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +36,7 @@ public class Ball : MonoBehaviour
 
         if (transform.position.y < -30)
         {
-            GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
-            if (balls.Length == 1)
-               Game.Instance.SpawnBall();
-             }
-            Destroy(gameObject);
+            transform.position = startPosition;
         }
     }
 }

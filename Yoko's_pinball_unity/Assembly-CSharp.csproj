@@ -60,7 +60,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\Bumper.cs" />
-    <Compile Include="Assets\Scripts\Triple.cs" />
     <Compile Include="Assets\Scripts\Flipper.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\Spring.cs" />
