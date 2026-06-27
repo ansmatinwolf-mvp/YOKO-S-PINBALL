@@ -22,6 +22,43 @@ public class Flipper : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+            hingeJointLeft.spring = jointSpringPressed;
+        else
+            hingeJointLeft.spring = jointSpringReleased;
+
+        if (Input.GetKey(KeyCode.RightShift))
+            hingeJointRight.spring = jointSpringPressed;
+        else
+            hingeJointRight.spring = jointSpringReleased;
+    }
+}
+
+/*
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Flipper : MonoBehaviour
+{
+    [SerializeField] float hitStrength = 80000f;
+    [SerializeField] float dampening = 250f;
+    [SerializeField] HingeJoint hingeJointLeft;
+    [SerializeField] HingeJoint hingeJointRight;
+
+    private JointSpring jointSpringReleased = new();
+    private JointSpring jointSpringPressed = new();
+
+    void Start()
+    {
+        jointSpringPressed.spring = jointSpringReleased.spring = hitStrength;
+        jointSpringPressed.damper = jointSpringReleased.damper = dampening;
+        jointSpringPressed.targetPosition = hingeJointLeft.limits.max;
+        jointSpringReleased.targetPosition = hingeJointLeft.limits.min;
+    }
+
+    void Update()
+    {
         // Left flipper
         if (Input.GetKey(KeyCode.LeftShift))
             hingeJointLeft.spring = jointSpringPressed;
