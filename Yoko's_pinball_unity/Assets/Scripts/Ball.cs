@@ -22,7 +22,7 @@ public class Ball : MonoBehaviour
 
     public void Shoot()
     {
-        rigidbody.AddForce(new Vector3(0, 130, 0), ForceMode.VelocityChange);
+        rigidbody.AddForce(new Vector3(0, 40, 0), ForceMode.VelocityChange);
     }
 
     // Update is called once per frame

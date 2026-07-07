@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Flipper : MonoBehaviour
@@ -9,90 +7,43 @@ public class Flipper : MonoBehaviour
     [SerializeField] HingeJoint hingeJointLeft;
     [SerializeField] HingeJoint hingeJointRight;
 
-    private JointSpring jointSpringReleased = new();
-    private JointSpring jointSpringPressed = new();
+    JointSpring leftReleased;
+    JointSpring leftPressed;
+    JointSpring rightReleased;
+    JointSpring rightPressed;
 
     void Start()
     {
-        jointSpringPressed.spring = jointSpringReleased.spring = hitStrength;
-        jointSpringPressed.damper = jointSpringReleased.damper = dampening;
-        jointSpringPressed.targetPosition = hingeJointLeft.limits.max;
-        jointSpringReleased.targetPosition = hingeJointLeft.limits.min;
+        hingeJointLeft.useSpring = true;
+        hingeJointRight.useSpring = true;
+
+        leftPressed.spring = hitStrength;
+        leftPressed.damper = dampening;
+        leftPressed.targetPosition = hingeJointLeft.limits.max;
+
+        leftReleased.spring = hitStrength;
+        leftReleased.damper = dampening;
+        leftReleased.targetPosition = hingeJointLeft.limits.min;
+
+        rightPressed.spring = hitStrength;
+        rightPressed.damper = dampening;
+        rightPressed.targetPosition = hingeJointRight.limits.min;
+
+        rightReleased.spring = hitStrength;
+        rightReleased.damper = dampening;
+        rightReleased.targetPosition = hingeJointRight.limits.max;
     }
 
     void Update()
     {
-        // Left flipper
         if (Input.GetKey(KeyCode.LeftShift))
-            hingeJointLeft.spring = jointSpringPressed;
+            hingeJointLeft.spring = leftPressed;
         else
-            hingeJointLeft.spring = jointSpringReleased;
+            hingeJointLeft.spring = leftReleased;
 
-        // Right flipper — fixed to use hingeJointRight
         if (Input.GetKey(KeyCode.RightShift))
-            hingeJointRight.spring = jointSpringPressed;
+            hingeJointRight.spring = rightPressed;
         else
-            hingeJointRight.spring = jointSpringReleased;
+            hingeJointRight.spring = rightReleased;
     }
 }
-
-/* 
-Please take a look at the old code here 
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem;
-
-public class Flipper : MonoBehaviour
-{
-    [SerializeField] float hitStrength = 80000f;
-    [SerializeField] float dampening = 250f;
-    [SerializeField] HingeJoint hingeJointLeft;
-    [SerializeField] HingeJoint hingeJointRight;
-    private JointSpring jointSpringReleased = new();
-    private JointSpring jointSpringPressed = new();
-    private bool leftFlipperPressed, rightFlipperPressed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        jointSpringPressed.spring = jointSpringReleased.spring = hitStrength;
-        jointSpringPressed.damper = jointSpringReleased.damper = dampening;
-        jointSpringPressed.targetPosition = hingeJointLeft.limits.max;
-        jointSpringReleased.targetPosition = hingeJointLeft.limits.min;
-    }
-
-    private void OnLeftFlipper(InputValue value)
-    {
-        leftFlipperPressed = value.isPressed;
-    }
-    private void OnRightFlipper(InputValue value)
-    {
-        rightFlipperPressed = value.isPressed;
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (leftFlipperPressed)
-        {
-            hingeJointLeft.spring = jointSpringPressed;
-        }
-        else
-        {
-            hingeJointLeft.spring = jointSpringReleased;
-        }
-        if (rightFlipperPressed)
-        {
-            hingeJointLeft.spring = jointSpringPressed;
-        }
-        else
-        {
-            hingeJointLeft.spring = jointSpringReleased;
-        }
-
-    }
-}
-*/
