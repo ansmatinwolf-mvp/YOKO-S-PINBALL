@@ -1253,8 +1253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitStrength: 80000
   dampening: 250
-  hingeJointLeft: {fileID: 1106460586}
-  hingeJointRight: {fileID: 1154960184}
+  hingeJointLeft: {fileID: 1154960184}
+  hingeJointRight: {fileID: 1106460586}
 --- !u!1001 &876838385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2174,8 +2174,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 50
-    max: 50
+    min: 2
+    max: 25
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
