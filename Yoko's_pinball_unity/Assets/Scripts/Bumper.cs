@@ -29,7 +29,11 @@ public class Bumper : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        collision.collider.GetComponent<Rigidbody>().AddExplosionForce(2000f, transform.position, 8);
+        Rigidbody rb = collision.collider.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.AddExplosionForce(100f, transform.position, 8f, 0f, ForceMode.Impulse);
+        }
         light.enabled = true;
         timeLeftLightShine = 0.2f;
     }
