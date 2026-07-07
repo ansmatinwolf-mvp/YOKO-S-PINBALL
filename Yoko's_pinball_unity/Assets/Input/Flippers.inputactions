@@ -7,7 +7,7 @@
             "actions": [
                 {
                     "name": "LeftFlipper",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "731584cf-afcc-49cd-8314-a34e126c4769",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -16,9 +16,9 @@
                 },
                 {
                     "name": "RightFlipper ",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "9969ea20-ba6d-4b77-b74a-f489e42bb025",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -132,5 +132,17 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Keybinds",
+            "bindingGroup": "Keybinds",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
