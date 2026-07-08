@@ -7,10 +7,14 @@ public class Game : MonoBehaviour
 {
     [SerializeField] AudioSource soundPoints;
     private Vector3 startPosition = new Vector3(27.3299999f, -5.30000019f, 0.189999998f);
+
     public static Game Instance;
+
     [SerializeField] GameObject pfBall;
     [SerializeField] TextMeshProUGUI textScore;
-    private int score, currentScore;
+
+    private int score;
+
     public GameObject PfBall { get => pfBall; set => pfBall = value; }
 
     void Awake()
@@ -22,29 +26,27 @@ public class Game : MonoBehaviour
     {
         Physics.gravity = new Vector3(0, -50, 0);
         SpawnBall();
+
+        UpdateScoreText();
     }
 
     public void IncreaseScore(int amount)
     {
-        soundPoints.Play();
         score += amount;
+
+        UpdateScoreText();
+
+        if (soundPoints != null)
+        {
+            soundPoints.Play();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateScoreText()
     {
-        if (currentScore < score)
+        if (textScore != null)
         {
-            currentScore += (int)(1000 * Time.deltaTime);
-            if (currentScore > score)
-            {
-                currentScore = score;
-            }
-            textScore.text = currentScore.ToString("00000000");
-        }
-        else
-        {
-            soundPoints.Stop();
+            textScore.text = score.ToString("00000000");
         }
     }
 

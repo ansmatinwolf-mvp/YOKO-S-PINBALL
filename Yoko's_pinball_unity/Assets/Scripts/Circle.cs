@@ -8,33 +8,53 @@ public class Circle : MonoBehaviour
     private new Light light;
     [SerializeField] AudioSource soundCircle;
 
-    // Start is called before the first frame update
+    [SerializeField] private float maxLightValue = 6f;
+    [SerializeField] private float fadeSpeed = 1000f;
+    [SerializeField] private int scoreAmount = 300;
+
     void Start()
     {
         light = GetComponent<Light>();
+
+        if (light != null)
+        {
+            light.intensity = 0f;
+            lightValue = 0f;
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (lightValue > 0)
+        if (light != null)
         {
-            lightValue -= Time.deltaTime * 10000;
-            if (lightValue > 5000)
+            light.intensity = Mathf.MoveTowards(
+                light.intensity,
+                lightValue,
+                fadeSpeed * Time.deltaTime
+            );
+
+            if (light.intensity >= maxLightValue)
             {
-                light.intensity = (6000 - lightValue) * 1.25f;
-            }
-            else
-            {
-                light.intensity = lightValue * 0.5f;
+                lightValue = 0f;
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        soundCircle.Play();
-        Game.Instance.IncreaseScore(300);
-        lightValue = 6000;
+        if (other.CompareTag("Ball"))
+        {
+            if (soundCircle != null)
+            {
+                soundCircle.Play();
+            }
+
+            if (Game.Instance != null)
+            {
+                Game.Instance.IncreaseScore(scoreAmount);
+            }
+
+            lightValue = maxLightValue;
+        }
     }
 }
