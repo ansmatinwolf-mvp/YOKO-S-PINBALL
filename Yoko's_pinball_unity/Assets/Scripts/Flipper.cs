@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Flipper : MonoBehaviour
 {
-    [SerializeField] float hitStrength = 200000f; //80000 if too high. Higher value makes flipper snap up faster and harder 
-    [SerializeField] float dampening = 100f; //250 original dampening. Higher value = slower movement of hinges
+    [SerializeField] float hitStrength = 1000000f; //80000 if too high. Higher value makes flipper snap up faster and harder 
+    [SerializeField] float dampening = 150f; //250 original dampening. Higher value = slower movement of hinges
     [SerializeField] HingeJoint hingeJointLeft;
     [SerializeField] HingeJoint hingeJointRight;
 

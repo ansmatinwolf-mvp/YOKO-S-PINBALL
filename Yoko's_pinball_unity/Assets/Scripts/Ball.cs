@@ -25,6 +25,11 @@ public class Ball : MonoBehaviour
         Vector2 rotationAxis = Vector2.Perpendicular(speed);
         transform.Rotate(new Vector3(rotationAxis.x, rotationAxis.y, 0), -speed.magnitude * 40f, Space.World);
         previousPosition = position;
+
+        if (Input.GetKeyDown(KeyCode.F)) //Respawns ball in case stuck in unexpected area
+        {
+            ResetBall();
+        }
     }
 
     void OnTriggerEnter(Collider other)
