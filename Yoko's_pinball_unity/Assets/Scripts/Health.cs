@@ -4,6 +4,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
+    [SerializeField] private GameOverUI gameOverUI;
     private int currentHealth;
 
     public event Action<int, int> OnHealthChanged; // (current hp, max hp) - UI here later
@@ -41,7 +42,10 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Game Over");
         OnGameOver?.Invoke();
-        // TODO: actual game over logic here (e.g. show a UI panel, stop the ball, disable flippers)
+        if (gameOverUI != null)
+        {
+            gameOverUI.ShowGameOver();
+        }
     }
 
     public int GetCurrentHealth() => currentHealth;
