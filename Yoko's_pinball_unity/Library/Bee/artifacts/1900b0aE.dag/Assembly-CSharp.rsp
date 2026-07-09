@@ -352,6 +352,8 @@
 "Assets/Scripts/Circle.cs"
 "Assets/Scripts/Flipper.cs"
 "Assets/Scripts/Game.cs"
+"Assets/Scripts/Health.cs"
+"Assets/Scripts/HealthBarUI.cs"
 "Assets/Scripts/Person.cs"
 "Assets/Scripts/Spring.cs"
 -langversion:9.0
