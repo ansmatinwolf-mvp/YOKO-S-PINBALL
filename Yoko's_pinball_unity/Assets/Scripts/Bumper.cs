@@ -6,23 +6,20 @@ using UnityEngine.Rendering;
 public class Bumper : MonoBehaviour
 {
     [SerializeField] private new Light light;
+    [SerializeField] private AudioSource hitSound;
+    [SerializeField] private int points = 150;
+
     private float timeLeftLightShine;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-       if( timeLeftLightShine > 0)
+        if (timeLeftLightShine > 0)
         {
             timeLeftLightShine -= Time.deltaTime;
-            if(timeLeftLightShine < 0)
+
+            if (timeLeftLightShine < 0)
             {
-                light.enabled = false; 
+                light.enabled = false;
             }
         }
     }
@@ -30,11 +27,20 @@ public class Bumper : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Rigidbody rb = collision.collider.GetComponent<Rigidbody>();
+
         if (rb != null)
         {
             rb.AddExplosionForce(30f, transform.position, 8f, 0f, ForceMode.Impulse);
+
+            if (hitSound != null)
+            {
+                hitSound.Play();
+            }
+
+            Game.Instance.IncreaseScore(points);
+
+            light.enabled = true;
+            timeLeftLightShine = 0.2f;
         }
-        light.enabled = true;
-        timeLeftLightShine = 0.2f;
     }
 }
