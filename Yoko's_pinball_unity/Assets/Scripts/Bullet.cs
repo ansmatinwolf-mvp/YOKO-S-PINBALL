@@ -7,11 +7,11 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
 
     [Header("Lifetime")]
-    public float lifeTime = 5f;        // Auto-destroy after this many seconds
+    public float lifeTime = 5f;        // Auto destroy after this many seconds
 
     [Header("Damage")]
     public int damage = 10;
-    public string playerTag = "Player"; // Make sure your Player GameObject has this tag
+    public string playerTag = "Player"; // Make sure Player GameObject has this tag
 
     Rigidbody rb;
 
