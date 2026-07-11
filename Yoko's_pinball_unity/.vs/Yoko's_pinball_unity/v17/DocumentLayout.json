@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|c:\\users\\quits\\onedrive\\documents\\github\\yoko-s-pinball\\yoko\u0027s_pinball_unity\\assets\\scripts\\victoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\assets\\scripts\\victoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\victoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|c:\\users\\quits\\onedrive\\documents\\github\\yoko-s-pinball\\yoko\u0027s_pinball_unity\\assets\\scripts\\bosshealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|c:\\users\\quits\\onedrive\\documents\\github\\yoko-s-pinball\\yoko\u0027s_pinball_unity\\assets\\scripts\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\assets\\scripts\\enemyshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\assets\\scripts\\bosshealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bosshealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\assets\\scripts\\enemyshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyshooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCCCA60A-8F91-0402-AA5D-368DC624E9FE}|Assembly-CSharp.csproj|C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\assets\\scripts\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,61 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VictoryUI.cs",
-              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\VictoryUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VictoryUI.cs",
-              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\VictoryUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VictoryUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:20:02.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BossHealth.cs",
-              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BossHealth.cs",
-              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BossHealth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:01:15.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BossSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BossSpawner.cs",
-              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BossSpawner.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwA8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T05:46:18.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Game.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Game.cs",
-              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Game.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T05:32:16.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Circle.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Circle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Circle.cs",
@@ -132,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "HealthBarUI.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\HealthBarUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBarUI.cs",
@@ -144,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -156,19 +110,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "EnemyShooter.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\EnemyShooter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyShooter.cs",
               "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\EnemyShooter.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyShooter.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwFsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwFMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-10T03:54:51.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "BossHealth.cs",
+              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossHealth.cs",
+              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T06:01:15.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VictoryUI.cs",
+              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\VictoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VictoryUI.cs",
+              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\VictoryUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VictoryUI.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T06:20:02.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Game.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game.cs",
+              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Game.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T05:32:16.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BossSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossSpawner.cs",
+              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossSpawner.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T05:46:18.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BossController.cs",
+              "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossController.cs",
+              "ToolTip": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\BossController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAmwEEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T01:21:09.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Bumper.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Bumper.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bumper.cs",
@@ -180,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Ball.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ball.cs",
@@ -192,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Spring.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Spring.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spring.cs",
@@ -204,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Flipper.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Flipper.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Flipper.cs",
@@ -216,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Health.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
@@ -228,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Camera.cs",
               "DocumentMoniker": "C:\\Users\\quits\\OneDrive\\Documents\\Github\\YOKO-S-PINBALL\\Yoko\u0027s_pinball_unity\\Assets\\Scripts\\Camera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera.cs",
